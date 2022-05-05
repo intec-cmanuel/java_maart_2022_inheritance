@@ -4,8 +4,12 @@ public class Client extends Person {
     private String clientCard; // code van zijn kaart
     private String[] shoppingCart; // {"apple", "pear", "spaghetti"}
 
+    {
+        System.out.println("A client has been created!");
+    }
+
+
     public Client(String clientCard, String[] shoppingCart) {
-        super();
         this.clientCard = clientCard;
         this.shoppingCart = shoppingCart;
     }

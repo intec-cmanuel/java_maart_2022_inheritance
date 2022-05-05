@@ -1,12 +1,17 @@
 package be.intecbrussel.lesson.shapes;
 
 public class Square extends Rectangle{
-    public Square(double length, double height) {
-        super(length, height);
+    public Square(double side) {
+        super(side, side);
     }
 
-//    @Override
-//    public void setLength(double length) {
-//
-//    }
+    public void setSide(double side) {
+        super.setHeight(side);
+        super.setLength(side);
+    }
+
+    @Override
+    public String toString() {
+        return "Square{} " + super.toString();
+    }
 }
